@@ -1,0 +1,145 @@
+/* Import the font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* Example: Poppins */
+
+body {
+  /* Use the imported font */
+  font-family: "Poppins", sans-serif; /* Example: Poppins */
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Stack title and game vertically */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom right,
+    #6a11cb,
+    #2575fc
+  ); /* Nice gradient background */
+  color: #333; /* Default text color */
+}
+
+h1 {
+  color: #ffffff; /* White title text */
+  font-size: 3em; /* Larger title */
+  font-weight: 700; /* Bold title */
+  margin-bottom: 30px; /* Space below title */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.game {
+  display: flex;
+  flex-direction: column; /* Stack board and button */
+  align-items: center; /* Center board and button */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Slightly transparent white background */
+  padding: 25px;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+}
+
+.game-board {
+  margin-bottom: 20px; /* Space between board and button */
+}
+
+.status {
+  margin-bottom: 15px;
+  font-size: 1.4em;
+  font-weight: bold;
+  min-height: 1.5em;
+  color: #2c3e50; /* Darker blue-grey for status */
+  text-align: center;
+}
+
+/* Add styles for Winner and Draw */
+.status.winner {
+  color: #2701cf; /* Green for winner */
+}
+
+.status.draw {
+  color: #f39c12; /* Orange for draw */
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.square {
+  background: #6e06583b;
+  border: none; /* Remove default border */
+  float: left;
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 70px;
+  height: 70px;
+  margin: 3px; /* Add spacing between squares */
+  padding: 0;
+  text-align: center;
+  width: 70px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+  border-radius: 8px; /* Rounded square corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow on squares */
+  color: #34495e; /* Default square text color (neutral) */
+}
+
+.square:hover {
+  background-color: #ecf0f1; /* Light grey hover */
+  transform: scale(1.03); /* Slightly enlarge on hover */
+}
+
+.square:focus {
+  outline: 2px solid #3498db; /* Blue outline on focus */
+  background: #e0e6e8;
+}
+
+/* Style X and O */
+.square.X {
+  color: #5f0606;
+}
+
+.square.O {
+  color: #022922;
+}
+
+/* Style winning squares */
+.square.winning {
+  background-color: #2ecc71; /* Bright green background */
+  color: #ffffff !important; /* White text for winning X/O */
+}
+
+.restart-button {
+  margin-top: 10px; /* Adjusted margin */
+  padding: 12px 25px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(
+    to right,
+    #ff416c,
+    #ff4b2b
+  ); /* Red/Orange gradient button */
+  color: white;
+  border: none;
+  border-radius: 25px; /* Pill shape */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.restart-button:hover {
+  transform: translateY(-2px); /* Lift button slightly */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.restart-button:active {
+  transform: translateY(0px); /* Press button down */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
