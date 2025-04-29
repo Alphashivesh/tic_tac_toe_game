@@ -1,7 +1,7 @@
 # tic_tac_toe_game
 Created with CodeSandbox
 
-one can enjoy the game from: "https://tic-tac-toe-game-7gak.vercel.app/"
+[Live Demo 🚀](https://tic-tac-toe-game-7gak.vercel.app/)
 
 This is a classic Tic-Tac-Toe game implemented as an interactive web application using the React JavaScript library. It was developed and runs within a CodeSandbox environment, showcasing how modern web technologies can be used to create engaging user interfaces.
 
