@@ -33,7 +33,7 @@ Winning Line Highlight: The three squares that form the winning line are visuall
 
 Restart Button: Allows players to easily start a new game.
 
-Enhanced Styling: Features a visually appealing design with:
+## Enhanced Styling: Features a visually appealing design with:
 
 A gradient background.
 
